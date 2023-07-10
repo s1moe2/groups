@@ -16,8 +16,8 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc({
         version: '1.0.0',
       },
     },
-    apis: ['./*.js'],
-  })));
+    apis: ['./groups/*.js'],
+})));
 
 app.use("/groups", groups);
 
